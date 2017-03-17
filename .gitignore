@@ -1,1 +1,4 @@
 /django/env
+/django/src/db.sqlite3
+*.pyc
+.idea/

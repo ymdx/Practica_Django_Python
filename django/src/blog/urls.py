@@ -16,9 +16,12 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from Wordplease.views import helloworld
+from Wordplease.views import post_list
+from Wordplease.views import blog_list
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'hello',helloworld)
+    url(r'^$',post_list),
+    url(r'^blogs/', blog_list)
 ]
